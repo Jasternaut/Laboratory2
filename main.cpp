@@ -10,12 +10,12 @@ int main()
 {
     std::cout << "Input radius: ";
     // получение значения радиуса
-    int r;
+    float r;
     std::cin >> r;
 
-    if (r > 0 && r < 100)
+    if (r > 0.0 && r < 100.0)
     {
-        double answer;
+        float answer;
         // вычисление площади круга
         answer = 3.14 * sqrt(r);
         std::cout << "Answer is: ";
