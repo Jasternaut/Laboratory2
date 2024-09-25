@@ -10,14 +10,14 @@ int main()
 {
     std::cout << "Input radius: ";
     // получение значения радиуса
-    float r;
+    double r;
     std::cin >> r;
 
     if (r > 0.0 && r < 100.0)
     {
-        float answer;
+        double answer;
         // вычисление площади круга
-        answer = 3.14 * sqrt(r);
+        answer = acos(-1) * pow(r,2);
         std::cout << "Answer is: ";
         // вывод ответа с точностью до 10 в -9 степени
         std::cout << std::fixed << std::setprecision(9) << answer << std::endl;
